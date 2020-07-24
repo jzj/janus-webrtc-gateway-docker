@@ -70,7 +70,7 @@ RUN OPUS="1.3" && cd ~/ffmpeg_sources && \
 
 
 RUN LAME="3.100" && apt-get install -y nasm  && cd ~/ffmpeg_sources && \
-    wget http://downloads.sourceforge.net/project/lame/lame/$LAME/lame-$LAME.tar.gz && \
+    wget https://phoenixnap.dl.sourceforge.net/project/lame/lame/$LAME/lame-$LAME.tar.gz && \
     tar xzvf lame-$LAME.tar.gz && \
     cd lame-$LAME && \
     ./configure --prefix="$HOME/ffmpeg_build" --enable-nasm --disable-shared && \
