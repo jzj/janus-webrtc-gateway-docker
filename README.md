@@ -20,18 +20,19 @@ https://www.useloom.com/share/325799006d6f4b64a6ce0662ca3f1d57
 - libwebsocket v3.1.0, build with LWS_MAX_SMP=1, ipv6=true for single thread processing
 - libsrtp v2.2.0
 - ffmpeg 4.2.1 with vpx, libx264, alsa(for headless chrome screen caputreing)
+- gstreamer installation from gstreamer1.0-tools. (WIP for meson ninja build)
 - coturn v4.5.0.8 in order to test turn, use iceTransportPolicy=relay https://www.w3.org/TR/webrtc/#rtcicetransportpolicy-enum 
 - openresty 1.13.6.2
-- nvm + node.js LTS v10.16.0
+- nvm + node.js v12.18.3 (Latest LTS: Erbium)
 - certbot for let's encyrpt ssl setting
 - boringssl stable https://boringssl.googlesource.com/boringssl/+/chromium-stable 
 - libnice v0.1.14 https://github.com/libnice/libnice/releases/tag/0.1.14 
 - golang 1.7.5 for building boringssl
-- janus v0.9.2, enable all janus plugins(like videoroom, streaming, audiobridge...etc)
-- libnice from the latest gitlab https://gitlab.freedesktop.org/libnice/libnice  (removing global lock for improving janus gateway)
+- janus v0.10.4, enable all janus plugins(like videoroom, streaming, audiobridge...etc
 - [optional] GDB, Address Sanitizer(optional, see Dockerfile) for getting more info when crashing
 - nginx-rtmp-module and ffmpeg compile for MCU functionalilty experiment. For example, WEBRTC-HLS, DASH, RTMP...etc
 - use --net=host for network performance. If you use docker network, some overhead might appear (ref. https://hub.docker.com/_/consul/)
+
 
 
 
